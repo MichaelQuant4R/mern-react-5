@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
 const userRouter = require("./routes/user");
+const blogRouter = require("./routes/blog");
 
 
 dotenv.config();
@@ -16,6 +17,7 @@ app.use(express.json());
 
 
 app.use("/api/user", userRouter);
+app.use("/api/blog", blogRouter);
 
 if(process.env.NODE_ENV === "production"){
     app.use(express.static("client/build"));
