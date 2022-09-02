@@ -1,6 +1,4 @@
 const express = require("express");
-
-
 const router = express.Router();
 
 
@@ -24,4 +22,4 @@ router.get("/blogs", async (req, res) => {
 
 
 
-modules.export = router;
+module.exports = router;

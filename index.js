@@ -2,11 +2,14 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
+
+dotenv.config();
+
 const userRouter = require("./routes/user");
 const blogRouter = require("./routes/blog");
 
 
-dotenv.config();
+
 
 const app = express();
 // app.use(cors());
