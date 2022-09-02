@@ -9,9 +9,9 @@ dotenv.config();
 
 const app = express();
 // app.use(cors());
-app.use(cors({
-    origin: "https://mern-react-cv.herokuapp.com/",
-}));
+// app.use(cors({
+//     origin: "https://mern-react-cv.herokuapp.com/",
+// }));
 app.use(express.json());
 
 
